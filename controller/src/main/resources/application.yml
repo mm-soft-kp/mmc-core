@@ -1,0 +1,17 @@
+server:
+  port: 9091
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka
+  instance:
+    prefer‐ip‐address: true
+spring:
+  application:
+    name: core
+  datasource:
+    username: root
+    password: mysql
+    url: jdbc:mysql://192.168.75.128:3306/mmc_db?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
