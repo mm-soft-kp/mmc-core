@@ -1,5 +1,6 @@
 package com.mmc.core.controller;
 
+import com.mmc.core.api.HellOtherOneApi;
 import com.mmc.core.biz.GetOneBiz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  * @date 2021/2/18 9:58
  */
 @RestController
-public class HellOtherOne {
+public class HellOtherOneController implements HellOtherOneApi {
     @Autowired
     private GetOneBiz getOneBiz;
     @RequestMapping(value = "hello/getOne" ,method = RequestMethod.GET)
