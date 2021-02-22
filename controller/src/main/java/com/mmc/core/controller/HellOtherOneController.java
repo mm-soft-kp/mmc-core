@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.*;
  * @date 2021/2/18 9:58
  */
 @RestController
+@RequestMapping(value = "/coreHello")
 public class HellOtherOneController implements HellOtherOneApi {
     @Autowired
     private GetOneBiz getOneBiz;
-    @RequestMapping(value = "hello/getOne" ,method = RequestMethod.GET)
+    @RequestMapping(value = "/getOne" ,method = RequestMethod.GET)
     public String getOne(@RequestParam(name = "yourName") String yourName){
         getOneBiz.getOne(yourName);
         return "匹配--"+yourName;

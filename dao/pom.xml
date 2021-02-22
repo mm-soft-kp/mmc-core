@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dao</artifactId>
+    <artifactId>core.dao</artifactId>
     <build>
         <plugins>
             <plugin>
@@ -30,6 +30,7 @@
                     <verbose>true</verbose>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
     <dependencies>
@@ -47,6 +48,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+
         <!--        //jdbc启动器-->
         <dependency>
             <groupId>com.alibaba</groupId>

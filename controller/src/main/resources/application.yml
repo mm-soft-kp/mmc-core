@@ -8,7 +8,7 @@ eureka:
     prefer‐ip‐address: true
 spring:
   application:
-    name: core
+    name: mmc-core
   datasource:
     username: root
     password: mysql
